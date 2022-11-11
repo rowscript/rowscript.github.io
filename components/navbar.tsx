@@ -11,7 +11,7 @@ interface NavbarProps {
 export function Navbar({ links, ...props }: NavbarProps) {
   return (
     <header
-      className="static top-0 z-50 flex-shrink-0 py-4 bg-white md:sticky"
+      className="top-0 z-50 flex-shrink-0 py-4 bg-white fixed w-full"
       {...props}
     >
       <div className="container flex flex-col items-start justify-between px-6 mx-auto md:flex-row md:items-center">

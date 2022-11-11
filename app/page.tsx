@@ -1,5 +1,6 @@
 import { Navbar } from "../components/navbar";
 import { MenuLinkContent } from "./types";
+import classNames from "classnames";
 
 export default function Home() {
   const links: MenuLinkContent[] = [
@@ -35,15 +36,15 @@ export default function Home() {
     },
   ];
   return (
-    <>
+    <div>
       <Navbar links={links}></Navbar>
-      <Body></Body>
-    </>
+      <Body className="bg"></Body>
+    </div>
   );
 }
-function Body() {
+function Body({ className }) {
   return (
-    <div className="absolute top-16 w-full">
+    <div className={classNames(className, "absolute top-16 w-full")}>
       <div className="mt-16 md:mt-32 lg:mt-40 mb-12">
         <section className="flex justify-center">
           <div className="max-w-1060 flex flex-col items-center px-5 sm:px-8 lg:box-content">
