@@ -2,6 +2,7 @@ import Link from "next/link";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
 import { MenuLinkContent } from "../types";
+import { Brand } from "./brand";
 
 interface NavbarProps {
   links: MenuLinkContent[];
@@ -18,6 +19,7 @@ export function Navbar({ links, ...props }: NavbarProps) {
           RowScript
         </Link>
         {links ? <Menu items={links} /> : null}
+        <Brand></Brand>
       </div>
     </header>
   );
