@@ -47,7 +47,7 @@ function MenuLink({ link }: { link: MenuLinkContent }) {
         href={link.url}
         passHref
         className={classNames(
-          "py-4 hover:underline text-sm md:text-base",
+          "transition duration-500 py-4 hover:border-b-4 border-gray-700 text-sm md:text-base",
           link.url === pathname ? "font-semibold" : "font-normal"
         )}
       >
