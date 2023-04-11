@@ -42,7 +42,7 @@ export default function Home() {
     </div>
   );
 }
-function Body({ className }) {
+function Body({ className }: { className: string }) {
   return (
     <div className={classNames(className, "absolute top-16 w-full")}>
       <div className="mt-16 md:mt-32 lg:mt-40 mb-12">

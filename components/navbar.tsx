@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classNames from "classnames";
 import { usePathname } from "next/navigation";
-import { MenuLinkContent } from "../types";
+import { MenuLinkContent } from "../app/types";
 import { Brand } from "./brand";
 
 interface NavbarProps {

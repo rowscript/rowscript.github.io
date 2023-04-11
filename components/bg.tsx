@@ -1,4 +1,3 @@
 export function Bg() {
-  return (
-  );
+  return;
 }
