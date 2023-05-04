@@ -1,11 +1,9 @@
 name: rowscript-site
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,8 +18,7 @@ jobs:
         run: npm run build
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: out
-
+          path: build
   deploy:
     needs: build
     permissions:
