@@ -1,5 +1,4 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -9,23 +8,15 @@ const config = {
   tagline: 'A robustly-typed functional language that compiles to efficient and reliable JavaScript.',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://rowscript-lang.org',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'rowscript', // Usually your GitHub org/user name.
-  projectName: 'rowscript.github.io', // Usually your repo name.
+  organizationName: 'rowscript',
+  projectName: 'rowscript.github.io',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
