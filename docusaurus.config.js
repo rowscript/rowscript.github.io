@@ -45,12 +45,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/rowscript-social-card.jpg',
+      image: 'img/rowscript-social-card.png',
       navbar: {
         title: 'RowScript',
         logo: {
           alt: 'RowScript Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
