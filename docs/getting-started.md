@@ -29,7 +29,7 @@ And, that's it!
 
 It just works, default configurations are all fine.
 
-## Hello... world?
+## Hello... World?
 
 Create a file called `hello.rows`:
 
