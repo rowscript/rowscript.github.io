@@ -1,7 +1,7 @@
 ---
 title: Open Sourcing RowScript
 authors: anqur
-tags: [news]
+tags: [ news ]
 ---
 
 We're open sourcing our RowScript compiler, feel free to check it out!
