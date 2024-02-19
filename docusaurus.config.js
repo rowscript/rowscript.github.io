@@ -19,7 +19,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans']
   },
 
   presets: [
@@ -58,6 +58,10 @@ const config = {
             sidebarId: 'tourSidebar',
             position: 'left',
             label: 'Tour',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
