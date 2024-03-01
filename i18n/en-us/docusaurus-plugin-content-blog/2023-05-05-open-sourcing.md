@@ -1,10 +1,10 @@
 ---
 title: Open Sourcing RowScript
 authors: anqur
-tags: [ 新闻 ]
+tags: [ news ]
 ---
 
-开源
+We're open sourcing our RowScript compiler, feel free to check it out!
 
 ```bash
 npm install -D rowscript@latest
