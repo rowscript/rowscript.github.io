@@ -9,6 +9,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://rowscript-lang.org',
+  // Temporary fix for fork repo of GitHub Pages deployment
   baseUrl: '/rowscript.github.io/',
 
   organizationName: 'rowscript',
@@ -18,8 +19,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh-Hans']
+    defaultLocale: 'zh-cn',
+    locales: ['en-us', 'zh-cn']
   },
 
   presets: [
