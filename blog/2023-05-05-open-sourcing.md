@@ -4,7 +4,7 @@ authors: anqur
 tags: [ news ]
 ---
 
-We're open sourcing our RowScript compiler, feel free to check it out!
+我们开源了 RowScript 编译器，欢迎随时查看！
 
 ```bash
 npm install -D rowscript@latest
