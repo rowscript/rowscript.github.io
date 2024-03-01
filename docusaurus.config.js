@@ -9,7 +9,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://rowscript-lang.org',
-  baseUrl: '/',
+  baseUrl: '/rowscript.github.io/',
 
   organizationName: 'rowscript',
   projectName: 'rowscript.github.io',
