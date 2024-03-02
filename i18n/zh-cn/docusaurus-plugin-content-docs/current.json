@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tourSidebar.category.Handbook": {
-    "message": "Handbook",
+    "message": "手册",
     "description": "The label for category Handbook in sidebar tourSidebar"
   },
   "sidebar.tourSidebar.category.Why RowScript?": {
