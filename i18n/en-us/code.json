@@ -1,7 +1,6 @@
 {
-  "homepage.title": {
-    "message": "homepage.title",
-    "description": "The title of the homepage"
+  "homepage.slogan": {
+    "message": "Start Rowing with Types! 🚣"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

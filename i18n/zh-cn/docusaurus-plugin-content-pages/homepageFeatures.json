@@ -1,0 +1,14 @@
+{
+  "friendlySyntax": {
+    "title": "友好语法",
+    "description": "RowScript 大量借鉴了 JavaScript 的语法，使其更加友好，同时也受到了 TypeScript、Python 和 Rust 等其他语言的影响。"
+  },
+  "powerfulTypeSystem": {
+    "title": "健壮的类型系统",
+    "description": "RowScript 支持包括<a href=\"https://en.wikipedia.org/wiki/Dependent_type\">依值类型</a>、面向对象编程、接口（或在 Rust 中称为 \"Trait\"，在 Haskell 中称为 \"TypeClass\"）等多种前沿语言特性。"
+  },
+  "fastCompile": {
+    "title": "快速编译",
+    "description": "RowScript 的编译器使用<a href='https://rust-lang.org'> Rust</a> 语言编写，并通过原生二进制文件发布，拥有飞快的编译速度。"
+  }
+}
