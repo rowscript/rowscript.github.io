@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# Getting Started
+# 入门指南
 
-## Create a Workspace
+## 创建工作文件夹
 
-RowScript adopts `npm` ecosystem, so `npm init` is all you need.
+RowScript 采用 `npm` 生态系统，因此只需使用 `npm init` 命令即可。
 
 ```bash
 mkdir demo/
@@ -14,24 +14,24 @@ cd demo/
 npm init
 ```
 
-## Install RowScript
+## 安装 RowScript
 
-Run the following command:
+执行以下命令：
 
 ```bash
 npm install -D rowscript
 ```
 
-And, that's it!
+就这样完成了！
 
-* No `*config.json` or other files needed
-* No new fields should be added to `package.json` file to mess up its schema
+* 不需要 config.json 或其他文件。
+* 无需向 package.json 文件添加新字段以免影响其结构。
 
-It just works, default configurations are all fine.
+它的运行就是如此简洁，所有的默认配置均适用，无需额外调整。
 
-## Hello... World?
+## 你好... 世界?
 
-Create a file called `hello.rows`:
+创建一个名为 `hello.rows` 的文件：
 
 ```ts
 import console;
@@ -39,19 +39,19 @@ import console;
 console::log("Hello, world!");
 ```
 
-Run the compiler:
+运行编译器：
 
 ```bash
 npx rowscript
 ```
 
-And the generated JS code would show up at a subdirectory `./dist/`.
+生成的 JavaScript 代码将出现在一个子目录 `./dist/` 中。
 
-Run it with `node`:
+用 `node` 运行它：
 
 ```bash
 $ node ./dist/index.mjs
 Hello, world!
 ```
 
-Ah ha, you just mastered this language in 5 minutes ⏰!
+啊哈，你只用了 5 分钟就掌握了这门语言⏰！

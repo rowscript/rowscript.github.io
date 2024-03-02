@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# Functions
+# 函数
 
-## Function Definitions
+## 函数定义
 
-Function definitions in RowScript look similar to ones in JavaScript/TypeScript.
+RowScript 中的函数定义与 JavaScript / TypeScript 中的类似。
 
 ```ts
 function f() {
@@ -14,8 +14,7 @@ function f() {
 }
 ```
 
-Users need to write `return` as the last expression of the function, a slightly noisy but necessary keyword to indicate
-what to return. If the return value and type are omitted, they are desugared into a unit value and the unit type.
+用户需要在函数的最后加上 `return` 语句，这个关键字虽然略显多余，但却是必须的，以明确函数的返回类型。如果省略返回值和类型，系统将自动将其视为 `unit` 类型。
 
 ```ts
 function f(): unit {
@@ -23,8 +22,7 @@ function f(): unit {
 }
 ```
 
-However, you need to explicitly specify the return type of the function definition, omitting it will not bring in any
-type inference.
+你需要明确指定函数定义的返回类型，如果不明确指定返回类型，将不会进行任何类型推断。
 
 ```ts
 function f0() { // ❌ invalid
@@ -36,18 +34,17 @@ function f1(): number { // ✅ okay
 }
 ```
 
-## Function Types and Expressions
+## 函数类型和表达式
 
-Function expressions could be created using *arrow functions*, quite like the ones in TypeScript. But the type of
-functions adopt a different arrow symbol `->` to disambiguate itself from function expressions.
+可以使用 *箭头函数* 创建函数表达式，这与 TypeScript 中的非常相似。但是，函数的类型使用不同的箭头符号 -> 来与函数表达式区分开来。
 
 ```plaintext
 const f: (x: number) -> number = x => x;
 ```
 
-## Generic Functions
+## 泛型函数
 
-Function definitions could be generic, as in TypeScript.
+函数定义可以是泛型的，如同 TypeScript。
 
 ```ts
 function id<T>(x: T): T {

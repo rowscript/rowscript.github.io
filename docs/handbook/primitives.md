@@ -2,14 +2,14 @@
 sidebar_position: 1
 ---
 
-# Primitive Types
+# 基本类型
 
-Following JavaScript primitive types are supported and compatible in RowScript:
+RowScript 支持并兼容以下 JavaScript 基本类型：
 
-* [`string`], e.g. `"hello"`
-* [`number`], e.g. `42`
-* [`boolean`], i.e. `false` and `true`
-* [`bigint`], e.g. `42n`
+* [`string`], 例如 `"hello"`
+* [`number`], 例如 `42`
+* [`boolean`], 即 `false` 和 `true`
+* [`bigint`], 例如 `42n`
 
 [`string`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
@@ -19,10 +19,9 @@ Following JavaScript primitive types are supported and compatible in RowScript:
 
 [`bigint`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt
 
-## Builtin Operators
+## 内置操作符
 
-Some of the famous ["thanks for inventing JavaScript"] overpowered operators are not allowed in RowScript. Operators
-like `+`/`-` are only effective on arguments with the same type.
+RowScript 不支持一些在 JavaScript 中著名的（["thanks for inventing JavaScript"]）、功能过于「强大」的操作符。比如，+/- 操作符仅适用于类型相同的参数。
 
 ```js
 1 + 2 // ✅
@@ -32,16 +31,14 @@ like `+`/`-` are only effective on arguments with the same type.
 
 ["thanks for inventing JavaScript"]: https://www.reddit.com/r/ProgrammerHumor/comments/8srix1/thanks_brendan_for_giving_us_the_javascript
 
-## Unit
+## Unit 类型
 
-There are **no** `null`, `undefined` and `void` in RowScript, due to the mess when they work together. Instead, we use a
-new primitive type `unit`. It's quite like `void`, but you can actually define a variable with this type, which makes it
-different.
+在 RowScript 中，我们决定不采用 `null`、`undefined` 和 `void`，原因是它们一旦混合使用便容易引发混乱。作为替代，我们引入了一种名为 `unit` 的新基本类型。这种类型与 `void` 类似，不过区别在于您实际上可以声明一个此类型的变量，这一特性让它独树一帜。
 
-Values of type `unit` could be created using `()`, we call it "unit value".
+可以使用 `()` 创建 unit 类型的值，我们称之为 "Unit value"。
 
 ```ts
 const a: unit = ();
 ```
 
-Note that upon code generation, unit values would be translated into `undefined` for compatibility.
+在将代码编译到 JavaScript 时，`Unit` 会被转换为 `undefined` 以保证兼容性。

@@ -2,4 +2,4 @@
 sidebar_position: 5
 ---
 
-# OOP
+# 面向对象编程
