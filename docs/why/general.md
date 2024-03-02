@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 总体思想
 
-有几个初衷激励我们发明了 RowScript，本质上就是一些引语。
+有几个初衷激励我们发明了 RowScript。
 
 ## Totality
 

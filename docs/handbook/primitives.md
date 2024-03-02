@@ -33,9 +33,9 @@ RowScript 不支持一些在 JavaScript 中著名的（["thanks for inventing Ja
 
 ## Unit 类型
 
-在 RowScript 中，我们决定不采用 `null`、`undefined` 和 `void`，原因是它们一旦混合使用便容易引发混乱。作为替代，我们引入了一种名为 `unit` 的新基本类型。这种类型与 `void` 类似，不过区别在于您实际上可以声明一个此类型的变量，这一特性让它独树一帜。
+在 RowScript 中，我们决定不采用 `null`、`undefined` 和 `void`，原因是它们一旦混合使用便容易引发混乱。作为替代，我们引入了一种名为 `Unit` 的新基本类型。这种类型与 `void` 类似，不过区别在于您实际上可以声明一个此类型的变量，这一特性让它独树一帜。
 
-可以使用 `()` 创建 unit 类型的值，我们称之为 "Unit value"。
+可以使用 `()` 创建 Unit 类型的值，我们称之为 "Unit value"。
 
 ```ts
 const a: unit = ();
