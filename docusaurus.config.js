@@ -8,9 +8,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://rowscript-lang.org",
-  // Temporary fix for fork repo of GitHub Pages deployment
-  baseUrl: '/rowscript.github.io/',
-  // baseUrl: "/",
+  baseUrl: "/",
 
   organizationName: "rowscript",
   projectName: "rowscript.github.io",
