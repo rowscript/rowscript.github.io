@@ -2,10 +2,10 @@
 sidebar_position: 2
 ---
 
-# Research Ideas
+# 研究资料
 
 :::caution
 
-Some academic stuff going on here, this page ought to contain hardcore content.
+这里涉及到一些学术性研究的资料，可能会非常硬核。
 
 :::
