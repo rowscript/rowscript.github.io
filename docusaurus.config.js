@@ -1,43 +1,43 @@
 // @ts-check
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const config = {
-  title: 'RowScript',
-  tagline: 'A robustly-typed functional language that compiles to efficient and reliable JavaScript.',
-  favicon: 'img/favicon.ico',
+  title: "RowScript",
+  favicon: "img/favicon.ico",
 
-  url: 'https://rowscript-lang.org',
+  url: "https://rowscript-lang.org",
   // Temporary fix for fork repo of GitHub Pages deployment
   baseUrl: '/rowscript.github.io/',
+  // baseUrl: "/",
 
-  organizationName: 'rowscript',
-  projectName: 'rowscript.github.io',
+  organizationName: "rowscript",
+  projectName: "rowscript.github.io",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'zh-cn',
-    locales: ['en-us', 'zh-cn']
+    defaultLocale: "zh-cn",
+    locales: ["en-us", "zh-cn"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/rowscript/rowscript.github.io/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/rowscript/rowscript.github.io/",
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/rowscript/rowscript.github.io/',
+          editUrl: "https://github.com/rowscript/rowscript.github.io/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -46,63 +46,63 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/rowscript-social-card.png',
+      image: "img/rowscript-social-card.png",
       navbar: {
-        title: 'RowScript',
+        title: "RowScript",
         logo: {
-          alt: 'RowScript Logo',
-          src: 'img/logo.png',
+          alt: "RowScript Logo",
+          src: "img/logo.png",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tourSidebar',
-            position: 'left',
-            label: 'Tour',
+            type: "docSidebar",
+            sidebarId: "tourSidebar",
+            position: "left",
+            label: "Tour",
           },
           {
-            type: 'localeDropdown',
-            position: 'right',
+            type: "localeDropdown",
+            position: "right",
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/rowscript/rowscript',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/rowscript/rowscript",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tour',
-                to: '/docs/intro',
+                label: "Tour",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/rowscript',
-              }
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/rowscript",
+              },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/rowscript/rowscript',
+                label: "GitHub",
+                href: "https://github.com/rowscript/rowscript",
               },
             ],
           },

@@ -1,36 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-
-const FeatureList = [
-  {
-    title: 'Friendly Syntax',
-    description: (
-      <>
-        RowScript reuses most of the JavaScript syntax for friendliness, also influenced by other languages like
-        TypeScript, Python and Rust.
-      </>
-    ),
-  },
-  {
-    title: 'Super Powerful Type System',
-    description: (
-      <>
-        Language features like <a href="https://en.wikipedia.org/wiki/Dependent_type">dependent types</a>, tagged union,
-        OOP, interfaces (or "traits" in Rust, "typeclasses" in Haskell) and more are all supported.
-      </>
-    ),
-  },
-  {
-    title: 'Fast to Compile',
-    description: (
-      <>
-        RowScript compiler is written in <a href='https://rust-lang.org'>Rust</a> programming language and shipped via
-        native binaries, it's stunningly fast.
-      </>
-    ),
-  },
-];
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function Feature({ title, description }) {
   return (
@@ -44,12 +15,16 @@ function Feature({ title, description }) {
 }
 
 export default function HomepageFeatures() {
+  const { _, i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
+  const FeatureList = require(`@site/i18n/${locale}/docusaurus-plugin-content-pages/homepageFeatures.json`);
+
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {Object.entries(FeatureList).map(([key, { title, description }], idx) => (
+            <Feature key={idx} title={title} description={<p dangerouslySetInnerHTML={{__html: description}} />} />
           ))}
         </div>
       </div>
