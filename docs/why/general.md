@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# General Ideas
+# 总体思想
 
-There are several ideas that initially fuel our motivation to create RowScript, well, essentially just some quotes.
+有几个初衷激励我们发明了 RowScript，本质上就是一些引语。
 
 ## Totality
 
@@ -12,9 +12,7 @@ There are several ideas that initially fuel our motivation to create RowScript, 
 >
 > -- Jon Sterling, [Make Three To Throw Away], WITS '22
 
-By totality, every possible computation will be performed during compilation, and thanks to a dependent type system,
-those computation results could feed as some useful type information. This enables our library writers to make better
-frameworks, with less tricks and hacks, and most importantly, with a good and interactive **type debugging support**.
+通过 `Totality`, 每一个可能的计算都将在编译期间执行，并且得益于依值类型系统，这些计算结果可以作为一些有用的类型信息。这使得库的作者能够开发出更优秀的框架，不再需要依赖过多的技巧或临时，奇怪的解决方案，最重要的是，它提供了优秀且交互式的**类型调试支持**。
 
 [Make Three To Throw Away]: https://www.jonmsterling.com/slides/sterling-2022-wits.pdf
 
@@ -24,8 +22,7 @@ frameworks, with less tricks and hacks, and most importantly, with a good and in
 >
 > -- Ryan Dahl, [JavaScript Containers]
 
-JavaScript is everywhere, we target our code generation into it first instead of WebAssembly, since we believe in the
-powerfulness of this universal language, unless it's aided by modern language tools. :)
+JavaScript 无处不在，我们首先将代码生成目标定位于它，而不是 WebAssembly，因为我们相信这种通用语言的强大能力，除非它得到现代语言工具的帮助。:)
 
 [JavaScript Containers]: https://tinyclouds.org/javascript_containers
 
@@ -35,12 +32,9 @@ powerfulness of this universal language, unless it's aided by modern language to
 >
 > -- [玩火 (niltok)], from a group talk in 2021
 
-At the very beginning, we tried experimenting with [row polymorphism] to model some interesting JavaScript code, that's
-also the origin of the name "**Row**Script". We further developed the row polymorphic feature and more interesting stuff
-to make the type system robust and versatile.
+在最初，我们尝试用 [row polymorphism] （行多态） 来模拟一些有趣的 JavaScript 代码，这也是 "**Row**Script" 名称的起源。我们进一步发展了行多态特性和更多有趣的东西，使得类型系统健壮且多样化。
 
-It's worth noting that row polymorphism in RowScript is different from [that in PureScript]. Here, rows could be used to
-create **extensible enumeration types**.
+值得注意的是，RowScript 中的行多态与 PureScript 中的行多态特性不同。在这里，行可以用来创建**可扩展的枚举类型**。
 
 [玩火 (niltok)]: https://github.com/niltok
 [row polymorphism]: https://en.wikipedia.org/wiki/Row_polymorphism
