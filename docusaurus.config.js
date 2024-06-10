@@ -1,13 +1,12 @@
 // @ts-check
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const prism = require("prism-react-renderer");
 
 const config = {
   title: "RowScript",
   favicon: "img/favicon.ico",
 
-  url: "https://rowscript-lang.org",
+  url: "https://rows.ro",
   baseUrl: "/",
 
   organizationName: "rowscript",
@@ -108,8 +107,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} RowScript. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prism.themes.github,
+        darkTheme: prism.themes.dracula,
       },
     }),
 };
