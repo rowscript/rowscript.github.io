@@ -85,6 +85,10 @@ const config = {
             title: "Community",
             items: [
               {
+                label: "Discussions",
+                href: "https://github.com/rowscript/rowscript/discussions",
+              },
+              {
                 label: "Stack Overflow",
                 href: "https://stackoverflow.com/questions/tagged/rowscript",
               },
@@ -104,7 +108,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} RowScript. Built with Docusaurus.`,
+        copyright: `"Copyright © ${new Date().getFullYear()} RowScript. Built with Docusaurus.`,
       },
       prism: {
         theme: prism.themes.github,

@@ -1,8 +1,4 @@
----
-sidebar_position: 2
----
-
-# 入门指南
+# 安装与上手
 
 ## 创建工作文件夹
 
@@ -22,21 +18,19 @@ npm init
 npm install -D rowscript
 ```
 
-就这样完成了！
+这样就完成了！
 
-* 不需要 config.json 或其他文件。
-* 无需向 package.json 文件添加新字段以免影响其结构。
+* 不需要 `config.json` 或其他文件
+* 无需向 `package.json` 文件添加新字段以免影响其结构
 
 它的运行就是如此简洁，所有的默认配置均适用，无需额外调整。
 
 ## 你好... 世界?
 
-创建一个名为 `hello.rows` 的文件：
+创建一个名为 `hello.rows` 的文件，内容为：
 
 ```ts
-import console;
-
-console::log("Hello, world!");
+console.log("Hello, world!");
 ```
 
 运行编译器：
@@ -54,4 +48,4 @@ $ node ./dist/index.mjs
 Hello, world!
 ```
 
-啊哈，你只用了 5 分钟就掌握了这门语言⏰！
+啊哈，你只用了 5 分钟就掌握了这门语言 ⏰！

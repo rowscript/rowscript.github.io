@@ -1,11 +1,11 @@
 {
   "friendlySyntax": {
     "title": "Friendly Syntax",
-    "description": "RowScript reuses most of the JavaScript syntax for friendliness, also influenced by other languages like TypeScript, Python and Rust."
+    "description": "RowScript reuses most of the JavaScript syntax for friendliness, also influenced by other languages like TypeScript, Rust and Python."
   },
   "powerfulTypeSystem": {
     "title": "Super Powerful Type System",
-    "description": "Language features like <a href=\"https://en.wikipedia.org/wiki/Dependent_type\">dependent types</a>, tagged union, OOP, interfaces (or \"traits\" in Rust, \"typeclasses\" in Haskell) and more are all supported."
+    "description": "Language features like <a href=\"https://en.wikipedia.org/wiki/Dependent_type\">dependent types</a>, OOP, traits and more are all supported."
   },
   "fastCompile": {
     "title": "Fast to Compile",

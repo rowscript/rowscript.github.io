@@ -15,6 +15,10 @@
     "message": "指南",
     "description": "The label of footer link with label=Tour linking to /docs/intro"
   },
+  "link.item.label.Discussions": {
+    "message": "讨论",
+    "description": "The label of footer link with label=Discussions linking to GitHub Discussions"
+  },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
     "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/rowscript"

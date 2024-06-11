@@ -2,13 +2,5 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
-  },
-  "sidebar.tourSidebar.category.Handbook": {
-    "message": "Handbook",
-    "description": "The label for category Handbook in sidebar tourSidebar"
-  },
-  "sidebar.tourSidebar.category.Why RowScript?": {
-    "message": "Why RowScript?",
-    "description": "The label for category Why RowScript? in sidebar tourSidebar"
   }
 }
