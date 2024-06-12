@@ -157,12 +157,12 @@ function printId(id: number | string) {
 ```ts
 type StringID = {
     str: string;
-    type: 'string_id';
+    type: "string_id";
 }
 
-type NumberID = Omit<StringID, 'type'> & {
+type NumberID = Omit<StringID, "type"> & {
     n: number;
-    type: 'number_id';
+    type: "number_id";
 }
 
 type ID = StringID | NumberID;

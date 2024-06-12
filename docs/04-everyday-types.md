@@ -17,7 +17,7 @@ RowScript 支持并兼容以下 JavaScript 基本类型：
 
 [`bigint`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt
 
-## 内置操作符
+### 内置操作符
 
 RowScript 不支持一些在 JavaScript 中著名的 [“感谢发明了 JavaScript”] 梗、功能过于“强大”的操作符。比如，`+`/`-`
 操作符仅适用于类型相同的参数。

@@ -1,8 +1,8 @@
 # 安装与上手
 
-## 创建工作文件夹
+## 创建目录
 
-RowScript 采用 `npm` 生态系统，因此只需使用 `npm init` 命令即可。
+RowScript 完全拥抱 npm 生态，因此只需使用 `npm init` 命令初始化项目即可。
 
 ```bash
 mkdir demo/
@@ -18,12 +18,12 @@ npm init
 npm install -D rowscript
 ```
 
-这样就完成了！
+完成！
 
 * 不需要 `config.json` 或其他文件
 * 无需向 `package.json` 文件添加新字段以免影响其结构
 
-它的运行就是如此简洁，所有的默认配置均适用，无需额外调整。
+所有的默认配置均适用，无需额外调整。
 
 ## 你好... 世界?
 
