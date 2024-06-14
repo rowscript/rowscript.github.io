@@ -154,8 +154,8 @@ const a = f(); //=> {n: 42}
 
 ## 枚举类型
 
-枚举类型（enumeration type）类似 TypeScript 中的 union 类型，但是额外添加了 union 下每个类型的标签（tag），又称作
-discriminant。
+枚举类型（enumeration type）类似 TypeScript 中的 union 类型，但是额外添加了 union 下每个类型的标签（tag，又称作
+discriminant）。
 
 一个枚举类型的值被称为 **variant**，一个 variant 是其标签和具体数值的结合体。用户可以用 **大驼峰风格** 的标识符创建一个
 variant，例如：
@@ -165,7 +165,12 @@ const a = Hello;
 ```
 
 值得注意的是，此时 `a` 的类型为 `[Hello]`，即当前只有 `Hello` 这一个标签的情况。当 variant
-的数值类型没有指定时，类型默认为 `unit`，所以 `[Hello]` 实际上是 `[Hello(unit)]` 的语法糖。
+的数值类型没有指定时，类型默认为 `unit`，所以 `[Hello]` 实际上是 `[Hello(unit)]` 的语法糖。以上代码生成的 JS 结果为：
+
+```js
+// JS
+const a = {Hello: undefined};
+```
 
 可以用类似函数调用的方式给 variant 加上具体的数值，例如：
 
@@ -177,7 +182,12 @@ const a = SomeValue(42);
 
 <!-- @formatter:on -->
 
-此时 `a` 的类型为 `[SomeValue(number)]`。
+此时 `a` 的类型为 `[SomeValue(number)]`，生成的 JS 代码为：
+
+```js
+// JS
+const a = {SomeValue: 42};
+```
 
 从技术的角度说，RowScript 的枚举类型和 Rust 的枚举类型，以及 PureScript、Elm、Haskell 等语言的 ADT（algebraic data
 type）不同的地方在于，RowScript 枚举类型是 **可以任意扩展的**，这点来说，它和 OCaml 语言的 [polymorphic variant] 十分之相似。
@@ -219,7 +229,7 @@ const c: [Foo | Bar | Baz] = b;
 
 一个 variant 可以通过 switch 表达式进行值匹配。
 
-<!-- @formatter:on-->
+<!-- @formatter:off -->
 
 ```ts
 function f(a: [SomeValue(number) | NoValue]) {
@@ -232,11 +242,11 @@ function f(a: [SomeValue(number) | NoValue]) {
 }
 ```
 
-<!-- @formatter:off -->
+<!-- @formatter:on -->
 
 当 switch 缺少一个标签的 case 时，会产生编译错误。
 
-<!-- @formatter:on-->
+<!-- @formatter:off -->
 
 ```ts
 function f(a: [SomeValue(number) | NoValue]) {
@@ -249,11 +259,11 @@ function f(a: [SomeValue(number) | NoValue]) {
 }
 ```
 
-<!-- @formatter:off -->
+<!-- @formatter:on -->
 
 使用默认分支（default branch）来覆盖其他可能的情况：
 
-<!-- @formatter:on-->
+<!-- @formatter:off -->
 
 ```ts
 function f(a: [SomeValue(number) | NoValue]) {
@@ -266,4 +276,12 @@ function f(a: [SomeValue(number) | NoValue]) {
 }
 ```
 
-<!-- @formatter:off -->
+<!-- @formatter:on -->
+
+## 数组类型
+
+TODO
+
+## Map 类型
+
+TODO

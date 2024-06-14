@@ -66,9 +66,9 @@ function f1(): unit {
 }
 ```
 
-### 函数类型和表达式
+`return` 关键词保留在了后续的 [控制结构] 中用作提前的函数返回控制。
 
-可以使用 *箭头函数* 创建函数表达式，这与 TypeScript 中的非常相似。
+[控制结构]: ./control#if
 
 ```ts
 const f: (x: number) => number = x => x;
@@ -135,7 +135,7 @@ type Foo;
 
 ## 类定义
 
-见 TODO。
+另见 [类](./class) 章节。
 
 ## 接口定义
 
