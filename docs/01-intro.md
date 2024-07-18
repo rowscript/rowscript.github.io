@@ -176,7 +176,7 @@ type ID = StringID | NumberID;
 <!-- @formatter:off -->
 
 ```ts
-type ID = [ StringID(string) | NumberID(number) ];
+type ID = [StringID: string | NumberID: number];
 ```
 
 <!-- @formatter:on -->
